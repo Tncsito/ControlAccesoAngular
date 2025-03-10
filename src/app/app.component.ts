@@ -4,12 +4,12 @@ import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 import { SpaceAccessComponent } from "./space-access/space-access.component";
 import { UsersComponent } from "./users/users.component";
-import { HistoryComponent } from "./history/history.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { LoghistoryComponent } from "./loghistory/loghistory.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, RegisterComponent, SpaceAccessComponent, UsersComponent, HistoryComponent, DashboardComponent],
+  imports: [RouterOutlet, LoginComponent, RegisterComponent, SpaceAccessComponent, UsersComponent, DashboardComponent, LoghistoryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
