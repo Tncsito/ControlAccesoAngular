@@ -1,1 +1,95 @@
-<p>space-access works!</p>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <a class="navbar-brand fw-bold" href="#"> 
+      <img src="https://i.ibb.co/RpjDsZTr/secure.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      AutoSecure
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">ADMINISTRADOR USUARIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+        <li class="nav-item"><a class="nav-link text-primary" href="#">Espacios</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="https://i.ibb.co/tMBjhR3N/usuario.png" alt="Usuario" width="30" height="30" class="rounded-circle">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <div class="card-header text-white py-2 px-4" style="background-color: #6f42c1;">
+    <h5>Acceso a la Gestión de Espacios</h5>
+  </div>
+  
+  
+  <div class="container mt-4">
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <form>
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">Nombre del espacio:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" placeholder="(ej., Laboratorio de Redes, Aula 101)">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">Edificio y número de salón:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">Carrera o área a la que pertenece:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">Encargado del espacio:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">ID del sensor y actuador:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">Horario de servicio:</label>
+            <div class="col-md-8">
+              <input type="time" class="form-control">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label class="col-md-4 col-form-label">Estatus:</label>
+            <div class="col-md-8">
+              <select class="form-select">
+                <option>Disponible</option>
+                <option>No Disponible</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="text-center">
+            <button type="submit" class="btn btn-success w-50">CREAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

@@ -1,6 +1,12 @@
-<app-login></app-login>
-<app-register></app-register>
-<app-space-access></app-space-access>
-<app-users></app-users>
-<app-loghistory></app-loghistory>
-<app-dashboard></app-dashboard>
+<nav>
+    <button [routerLink]="'/dashboard'">Dashboard</button>
+    <button [routerLink]="'/loghistory'">Log History</button>
+    <button [routerLink]="'/login'">Login</button>
+    <button [routerLink]="'/permission'">Permission</button>
+    <button [routerLink]="'/register'">Register</button>
+    <button [routerLink]="'/space-access'">Space Access</button>
+    <button [routerLink]="'/users'">Users</button>
+  </nav>
+  
+  <router-outlet></router-outlet>
+  

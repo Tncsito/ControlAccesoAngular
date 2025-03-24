@@ -1,18 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from "./login/login.component";
-import { RegisterComponent } from "./register/register.component";
-import { SpaceAccessComponent } from "./space-access/space-access.component";
-import { UsersComponent } from "./users/users.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
-import { LoghistoryComponent } from "./loghistory/loghistory.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, RegisterComponent, SpaceAccessComponent, UsersComponent, DashboardComponent, LoghistoryComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [RouterModule], // <-- Importa RouterModule aquí
+  template: `
+    <button [routerLink]="'/home'">Ir a Home</button>
+    <router-outlet></router-outlet>
+  `
 })
-export class AppComponent {
-  title = 'ControlAccesoAngular';
-}
+export class AppComponent { }

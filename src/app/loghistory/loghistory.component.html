@@ -1,1 +1,87 @@
-<p>loghistory works!</p>
+<div class="container-fluid p-0">
+    <!-- Header Navigation -->
+    <div class="dashboard-container">
+        <header class="top-header">
+          <div class="logo-section">
+            <img src="https://i.ibb.co/gLDbZhD7/logo.png" alt="AutoSecure Logo" class="logo">
+            <span class="brand-name">AutoSecure</span>
+          </div>
+          <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Addministrador de usuarios</a>
+            <a href="#">Dashboard</a>
+            <a href="#" class="active">History</a>
+            <a href="#">Espacios</a>
+            <a href="#">Permisos</a>
+          </nav>
+          <div class="user-profile">
+            <img src="https://i.ibb.co/8DPMphpJ/usuario.png" alt="perfil" class="avatar">
+          </div>
+        </header>
+    </div>
+  
+    <!-- Historial Header -->
+    <div class="historial-header">
+      <h1>Historial</h1>
+    </div>
+  
+    <!-- Search Bar -->
+    <div class="container mt-4 mb-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="search-container">
+            <input 
+              type="text" 
+              class="form-control search-input" 
+              placeholder="Buscar"
+              [(ngModel)]="searchTerm">
+            <div class="search-icon">
+              <i class="bi bi-search"></i>
+            </div>
+            <button 
+              *ngIf="searchTerm" 
+              class="clear-button border-0 bg-transparent"
+              (click)="clearSearch()">
+              <i class="bi bi-x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Table -->
+    <div class="container mb-5">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table table-borderless mb-0">
+            <thead>
+              <tr class="table-header">
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Rol</th>
+                <th>Puerta</th>
+                <th>Día</th>
+                <th>Hora</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let record of accessRecords" class="table-row">
+                <td>{{record.id}}</td>
+                <td>{{record.nombre}}</td>
+                <td>{{record.rol}}</td>
+                <td>{{record.puerta}}</td>
+                <td>{{record.dia}}</td>
+                <td>{{record.hora}}</td>
+                <td>
+                  <button class="btn btn-sm options-button">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
