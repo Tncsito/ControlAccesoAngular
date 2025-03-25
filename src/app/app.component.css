@@ -51,6 +51,9 @@ body {
 .nav-menu {
     display: flex;
     gap: 2rem;
+    position: -webkit-sticky;
+  top: 0;
+  width: 75%;
 }
 
 .nav-item {

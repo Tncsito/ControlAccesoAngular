@@ -5,6 +5,7 @@ import { PermissionComponent } from './permission/permission.component';
 import { SpaceAccessComponent } from './space-access/space-access.component';
 import { UsersComponent } from './users/users.component';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'historial', component: LoghistoryComponent },
   { path: 'espacios', component: SpaceAccessComponent },
   { path: 'gestion-usuario', component: UsersComponent },
+  { path: 'tablero', component: DashboardComponent },
 ];
