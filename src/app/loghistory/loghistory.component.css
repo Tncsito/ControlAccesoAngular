@@ -98,6 +98,10 @@
 }
 
 /* Table styling */
+.kiko{
+  padding-left: 9%;
+  padding-right: 9%;
+}
 .card {
   border-radius: 20px;
   overflow: hidden;
